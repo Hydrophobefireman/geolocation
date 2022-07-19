@@ -20,7 +20,7 @@ async function setupCountryInfo() {
   const content = JSON.stringify(data);
 
   await writeFile(filePath, content);
-  await write(join(process.cwd(), "pages/api/lib/_countries.json"), content);
+  await writeFile(join(process.cwd(), "pages/api/lib/_countries.json"), content);
 }
 
 function withCountryInfo(nextConfig = {}) {
