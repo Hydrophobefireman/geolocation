@@ -30,6 +30,7 @@ export default function handle(req: NextRequest) {
       status: 200,
       headers: {
         "content-type": "application/json",
+        'access-control-allow-origin':"*"
       },
     }
   );
